@@ -44,7 +44,7 @@ public class App {
             Product expiredCheese = new Product("Cheese", 80, 5, 0.5, LocalDate.of(2020, 1, 1));
             Customer customer = new Customer("youssefYasser1", 500);
             Cart cart = new Cart();
-            cart.add(expiredCheese, 1); // should fail
+            cart.add(expiredCheese, 1); 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
@@ -57,7 +57,7 @@ public class App {
         System.out.println("Test: Insufficient Balance");
         try {
             Product tv = new Product("TV", 1500, 1, 9.0, null);
-            Customer poorGuy = new Customer("youssefYasser2", 200); // too little balance
+            Customer poorGuy = new Customer("youssefYasser2", 200);
             Cart cart = new Cart();
             cart.add(tv, 1);
 
