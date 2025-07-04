@@ -1,0 +1,7 @@
+package model;
+
+public interface Shippable {
+    String getName();
+    double getWeight();
+    boolean requiresShipping();
+}
