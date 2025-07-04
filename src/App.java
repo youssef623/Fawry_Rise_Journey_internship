@@ -5,6 +5,7 @@ import model.Customer;
 import model.Product;
 import service.Checkout;
 
+
 public class App {
     public static void main(String[] args) {
         testNormalCheckout();
